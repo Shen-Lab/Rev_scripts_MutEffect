@@ -1,4 +1,7 @@
 # Rev_scripts_MutEffect
+
+Credit: Dr. Su-Ping Deng and Haoran Chen
+
 Reorganized Haoran's scripts in Mutational_Efffect including splitting, deleting,and wrapping etc.  
 Pipeline and instructions (modified)  
 STEP 1: network transformation
