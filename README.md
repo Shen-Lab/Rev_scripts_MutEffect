@@ -7,8 +7,8 @@ Pipeline and instructions (modified)
 
 ## STEP 1: network transformation
 	* Input: PPI_sig_network
-	* Code:  net_trans.r  
-        * Output: wang_network.txt, PPI_sig_network_no_selfloop.txt  
+	* Code:  net_trans.r
+	* Output: wang_network.txt, PPI_sig_network_no_selfloop.txt  
 	    
 ## STEP 2: Identifying motif 
 	* Input: wang_network.txt  
@@ -57,15 +57,15 @@ Pipeline and instructions (modified)
 	* Output: model_RandomForest.best_estimator.txt, helpout_ROC.eps, helpout_PC.eps  
 	
 ## STEP 11: Compare with centrality-based features  
-	### STEP 11.1 Generate centrality-based feature matrix  
-		* Input: PPI_sig_network, feature_label_motif.txt  
-		* Code: gen_fea_cen.r  
-		* Output: feature_label_cen.txt  
-	### STEP 11.2 Generate centrality-based random forest model  
-		* Input: feature_label_cen.txt  
-		* Code: RandomForest_new.py  
-		* Output: /RandomForest_cen.joblib.pkl, X_test_cen.txt  
-	### STEP 11.3 Plot figures to compare two types of features  
-		* Input: X_test_motif.txt,  X_test_cen.txt,  label_test.txt, RandomForest_motif.joblib.pkl,   RandomForest_cen.joblib.pkl  
-		* Code: plot_curve_cmp.py  
-		* Output: heldout_ROC_cmp.eps, heldout_PC_cmp.eps  
+### STEP 11.1 Generate centrality-based feature matrix  
+	* Input: PPI_sig_network, feature_label_motif.txt  
+	* Code: gen_fea_cen.r  
+	* Output: feature_label_cen.txt  
+### STEP 11.2 Generate centrality-based random forest model  
+	* Input: feature_label_cen.txt  
+	* Code: RandomForest_new.py  
+	* Output: /RandomForest_cen.joblib.pkl, X_test_cen.txt  
+### STEP 11.3 Plot figures to compare two types of features  
+	* Input: X_test_motif.txt,  X_test_cen.txt,  label_test.txt, RandomForest_motif.joblib.pkl,   RandomForest_cen.joblib.pkl  
+	* Code: plot_curve_cmp.py  
+	* Output: heldout_ROC_cmp.eps, heldout_PC_cmp.eps  
