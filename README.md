@@ -6,8 +6,8 @@ Reorganized Haoran's scripts in Mutational_Efffect including splitting, deleting
 Pipeline and instructions (modified)  
 
 ## STEP 1: network transformation
-	* Input: PPI_sig_network  
-        * Code:  net_trans.r  
+	* Input: PPI_sig_network
+	* Code:  net_trans.r  
         * Output: wang_network.txt, PPI_sig_network_no_selfloop.txt  
 	    
 ## STEP 2: Identifying motif 
